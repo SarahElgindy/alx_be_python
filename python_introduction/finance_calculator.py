@@ -1,7 +1,5 @@
-principal = 1000 # representing $1000
-rate = 0.05 # representing 5% annual interest rate
-time = 3 # representing 3 years
+age_1 = input("How old are you? ")
 
-interest = principal * rate * time # Calculation formula
+age = 30 + (2050 - 2023)
 
-print(f" The simple interest is: {interest}")
+print(f"In 2050, you will be {age} years old")
