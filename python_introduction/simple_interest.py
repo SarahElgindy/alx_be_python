@@ -1,7 +1,7 @@
-principal = 1000 # Principal amount
-rate = 0.05 # Annual interest
-time = 3 # Time in years
+principal = 1000 # representing $1000
+rate = 0.05 # representing 5% annual interest rate
+time = 3 # representing 3 years
 
-interest = principal * rate * time
+interest = principal * rate * time # Calculation formula
 
-print(f"The simple interest is: {interest}")
+print(f" The simple interest is: {interest}")
