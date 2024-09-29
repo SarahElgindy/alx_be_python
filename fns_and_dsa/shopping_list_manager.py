@@ -12,10 +12,10 @@ def main():
 
     while True:
         display_menu()
-        choice = int(input("choose an option(1-4):"))
+        choice = input("Enter your choice:")
 
         if choice == '1':
-            item = int(input("Enter the item to add:"))
+            item = input("Enter the item to add:")
             if item:
                 shopping_list.append(item)
                 print(f"{item} has been added.")
@@ -31,18 +31,18 @@ def main():
                 print(f"{item} not found, please enter a valid item.")
 
         elif choice == '3':
-            if shopping_list:
                 print("Current shopping list:")
-                for idx, item in enumerate(shopping_list, start=1):
-                  print(f"{idx}. {item}")
-            else:
-                print("Your shooping list is empty.")
+                if shopping_list:
+                     for item in shopping_list:
+                       print(f"{item}")
+                else:
+                    print("Your shooping list is empty.")
 
         elif choice == '4':
-            print("Exiting the shopping list manager, Goodbye")
+            print("Goodbye!")
             break
         else:
-            print("Invalid choice. please enter a valid number")
+            print("Invalid choice. Please try again.")
 
 if __name__ == "__main__":
     main()
