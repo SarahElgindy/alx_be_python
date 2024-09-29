@@ -12,7 +12,7 @@ def main():
 
     while True:
         display_menu()
-        choice = input("Enter your choice:")
+        choice = int(input("Enter your choice:"))
 
         if choice == '1':
             item = input("\nEnter the item to add:")
