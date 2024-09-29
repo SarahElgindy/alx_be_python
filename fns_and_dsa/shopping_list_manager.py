@@ -25,7 +25,7 @@ def remove_item():
 
 def view_list():
     if shopping_list:
-        print("\nCurrent shopping list:")
+        print("Current shopping list:")
         for idx, item in enumerate(shopping_list, start=1):
             print(f"{idx}. {item}")
     else:
