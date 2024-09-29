@@ -32,7 +32,6 @@ def view_list():
         print("Your shooping list is empty.")
 
 def main():
-    shopping_list = []
     while True:
         display_menu()
         choice = input("choose an option(1-4):")
