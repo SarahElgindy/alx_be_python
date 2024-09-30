@@ -14,7 +14,7 @@ def main():
         display_menu()
         choice = int(input("Enter your choice:"))
 
-        if choice == '1':
+        if choice == 1:
             item = input("\nEnter the item to add:")
             if item:
                 shopping_list.append(item)
@@ -22,7 +22,7 @@ def main():
             else:
                 print("Enter a valid item")
 
-        elif choice == '2':
+        elif choice == 2:
             item = input("Enter the item you want to remove:")
             if item in shopping_list:
                 shopping_list.remove(item)
@@ -30,7 +30,7 @@ def main():
             else:
                 print(f"{item} not found, please enter a valid item.")
 
-        elif choice == '3':
+        elif choice == 3:
                 print("Current shopping list:")
                 if shopping_list:
                      for item in shopping_list:
@@ -38,7 +38,7 @@ def main():
                 else:
                     print("Your shooping list is empty.")
 
-        elif choice == '4':
+        elif choice == 4:
             print("Goodbye!")
             break
         else:
