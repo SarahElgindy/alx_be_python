@@ -1,4 +1,6 @@
 class Book:
+    def __str__(self, title, author):
+        pass
     def __init__(self, title, author):
         self.title = title
         self.author = author
