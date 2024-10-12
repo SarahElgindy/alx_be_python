@@ -6,7 +6,7 @@ class Book:
 
 
     def __del__(self):
-        print(f"Deleting {self.title} of the book")
+        print(f"Deleting {self.title}")
 
 
     def __str__(self):
