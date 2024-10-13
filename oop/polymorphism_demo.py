@@ -1,11 +1,16 @@
 class Shape:
     def area(self):
-        pass
+        raise NotImplementedError("Derived classes must override this method.")
 
 class Rectangle(Shape):
     def __init__(self, lenght, width):
-        pass
-
+        self.lenght=lenght
+        self.width=width
+    def area(self):
+        return self.lenght * self.width
+        
 class Circle(Shape):
     def __init__(self, radius):
-        pass
+        self.radius=radius
+    def area(self):
+        return (self.radius **2)
