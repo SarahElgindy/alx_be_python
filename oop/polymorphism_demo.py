@@ -6,10 +6,10 @@ class Shape:
 
 class Rectangle(Shape):
     def __init__(self, lenght, width):
-        self.lenght=lenght
-        self.width=width
+        self.lenght = lenght
+        self.width = width
     def area(self):
-       return (self.length), (self.length * self.width)
+       return (self.lenght), (self.lenght * self.width)
 
 
 class Circle(Shape):
